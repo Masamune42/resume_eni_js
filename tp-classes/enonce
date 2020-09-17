@@ -1,0 +1,31 @@
+Avoir une class Bouton qui quand elle instanciée, ajoute un bouton
+dans l'élément du DOM passé au construteur + le texte à afficher dans
+le bouton.
+
+<div id="app">
+</div>
+
+Script :
+const appDiv = document.getElementById('app');
+new Button(appDiv, 'ButtonText'); // => <input type="button" value="ButtonText" />
+
+Exercice 2)
+Ajouter une méthode onClick à votre objet button qui va automatiquement interpréter l'évènement onClick de l'input
+et executer une fonction passée en paramètres à la fonction onClick (un callback).
+
+Exercice 3)
+Ajouter une méthode addEventListener à votre classe bouton qui doit permettre d'ajouter ce même eventListener au
+bouton instancié précédement.
+
+Exercice 5) Ajouter du CSS au bouton
+
+Exercice 6) Modifier le construteur pour qu'il puisse récupérer un objet avec { parent, text }.
+Parent = l'élement parent au bouton
+Text = Le texte du bouton
+Modifier l'index.js pour que le code fonctionne toujours
+
+Exercice 7) Ajouter une propriété type à votre bouton qui peut être égale à primary ou error
+
+Exercice 8) Si le type est primary, le bouton doit être bleu, si error le bouton doit être rouge
+
+Exercice 9) Ajouter une fonction setText() à la classe bouton pour modifier le texte du bouton
